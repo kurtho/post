@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="333" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="MVCpractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="333"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="332.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sY1-1o-rzs">
+                        <rect key="frame" x="8" y="8" width="140" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="QmL-Qc-h6J"/>
+                            <constraint firstAttribute="height" constant="140" id="uCc-pW-WU6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcs-6J-7gA">
+                        <rect key="frame" x="8" y="157" width="140" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIK-2s-VCQ">
+                        <rect key="frame" x="156" y="8" width="245" height="316.5"/>
+                        <string key="text">研究機構 TrendForce 日前發表新聞稿指出，新款 iPhone 7 在 RAM 和 ROM 部分都會有所升級，但 RAM 部分僅有 iPhone 7 Plus 會升級到 3GB，iPhone 7 則是維持 2GB RAM 規格。另外，TrendForce 也指出 iPhone 7 的最大容量將會進一步升級到 256GB，成為有史以來容量最大的 iPhone，而這點預測和之前的傳聞相符合。
+</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sY1-1o-rzs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="3Hh-d7-Tfo"/>
+                    <constraint firstItem="rcs-6J-7gA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="FRT-yl-1aa"/>
+                    <constraint firstItem="TIK-2s-VCQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="KCF-qt-7Ni"/>
+                    <constraint firstItem="TIK-2s-VCQ" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="Kia-zb-Sc9"/>
+                    <constraint firstItem="TIK-2s-VCQ" firstAttribute="leading" secondItem="rcs-6J-7gA" secondAttribute="trailing" constant="8" id="UQx-yv-2ZY"/>
+                    <constraint firstItem="TIK-2s-VCQ" firstAttribute="leading" secondItem="sY1-1o-rzs" secondAttribute="trailing" constant="8" id="UVL-9y-XWZ"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="rcs-6J-7gA" secondAttribute="bottom" constant="146.5" id="UfH-bw-kpD"/>
+                    <constraint firstItem="TIK-2s-VCQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="cCV-3W-btr"/>
+                    <constraint firstItem="sY1-1o-rzs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="g6r-2e-cqh"/>
+                    <constraint firstItem="rcs-6J-7gA" firstAttribute="top" secondItem="sY1-1o-rzs" secondAttribute="bottom" constant="9" id="qA2-nM-9Hw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DescribtionLabel" destination="TIK-2s-VCQ" id="Vba-2D-ZKQ"/>
+                <outlet property="NameLabel" destination="rcs-6J-7gA" id="e8n-BJ-zpJ"/>
+                <outlet property="myImageView" destination="sY1-1o-rzs" id="Czz-Pr-Ani"/>
+            </connections>
+            <point key="canvasLocation" x="273.5" y="234.5"/>
+        </tableViewCell>
+    </objects>
+</document>
