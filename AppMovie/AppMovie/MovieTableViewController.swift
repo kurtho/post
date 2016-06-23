@@ -11,7 +11,7 @@ import UIKit
 class MovieTableViewController: UITableViewController {
     var imageView: UIImageView?
     var imageName: String?
-    var pics: MoviesList!
+//    var pics: MoviesList!
 
     override func viewDidLoad() {
         super.viewDidLoad()

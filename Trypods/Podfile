@@ -6,6 +6,6 @@ target 'Trypods' do
   use_frameworks!
 pod 'SwiftyJSON'
 pod 'SDWebImage'
-  # Pods for Trypods
+
 
 end
