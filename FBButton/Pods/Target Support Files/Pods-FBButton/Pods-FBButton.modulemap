@@ -1,0 +1,6 @@
+framework module Pods_FBButton {
+  umbrella header "Pods-FBButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
